@@ -1,0 +1,12 @@
+```javascript
+// Example showing the unexpected behavior of Tailwind's utility classes.
+<div class="bg-gray-100 p-4">
+  <div class="float-right">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Button
+    </button>
+  </div>
+</div>
+```
+
+The expected behavior is that the button should be floated to the right.  However, it often overlaps other elements due to unexpected interactions with Tailwind's spacing or margin utilities, or due to the parent element's width constraints.
